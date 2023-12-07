@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Patient Interface</title>
+    <style>
+        /* CSS for the Patient Interface */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #3498db;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Styles for the appointment form */
+        form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            text-align: left;
+            padding-right: 300px;
+        }
+
+        label {
+            text-align: right;
+            padding-right: 20px;
+            grid-column: 1 / 2;
+            margin-bottom: 10px;
+        }
+
+        input, textarea, select {
+            grid-column: 2 / 3;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .sub{
+            
+            margin-left: 120%;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            cursor: pointer;
+            width: 200px;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        button:focus {
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome, Patient!</h1>
+        <p>Fill the form properly</p>
+    </header>
+
+    <section>
+        <h2 style="padding-left: 150px; margin-left:200px; font-size:35px" >Appointment Details :</h2>
+        <form id="appointmentForm" action="ourcaretakers.html" >
+            <label for="name">Your Name:</label>
+            <input type="text" id="username" name="name" required>
+
+            <label for="age">Your Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="city">Select a City:</label>
+        <select  id="city" name="city">
+            <option value="Nagpur">Nagpur</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Bangalore">Bangalore</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Pune">Pune</option>
+            <option value="Jaipur">Jaipur</option>
+            <option value="Ahmedabad">Ahmedabad</option>
+            <option value="Lucknow">Lucknow</option>
+        </select>
+
+            <label for="address">Your Address:</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="problem">Health Problem:</label>
+            <input type="text" id="problem" name="problem" required>
+
+            <label for="duration">Duration (in minutes):</label>
+            <input type="number" id="duration" name="duration" required>
+
+            <label for="contact">Your Contact Number:</label>
+            <input type="tel" id="contact" name="contact" pattern="[0-9]{10}" placeholder="1234567890" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="caregiverPreference">Caregiver Preferences:</label>
+            <textarea id="caregiverPreference" name="caregiverPreference" rows="4" required></textarea>
+
+            <label for="specialInstructions">Special Instructions:</label>
+            <textarea id="specialInstructions" name="specialInstructions" rows="4"></textarea>
+
+            <label for="specificRequirements">Specific Requirements:</label>
+            <textarea id="specificRequirements" name="specificRequirements" rows="4"></textarea>
+
+            <button type="button" id="appointDetail" name="appointDetail" class="sub">Submit Appointment</button>
+
+        </form>
+    </section>
+
+    <footer>
+        <p>Contact us at healinghealthcaretaker@gmail.com</p>
+    </footer>
+    <script type="module" src="detail.js">
+    </script>
+
+</body>
+</html>

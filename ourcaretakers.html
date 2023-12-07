@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Caretakers</title>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #3498db;
+            color: #fff;
+            font-size: 24px;
+        }
+
+        .caretaker-boxes {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .caretaker-box {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            width: 30%;
+        }
+
+        .caretaker-details {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .caretaker-details img {
+            max-width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* You can add more CSS styling as per your design preferences */
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Our Caretakers</h1>
+    </header>
+    <div class="caretaker-boxes">
+        <!-- Caretaker Box 1 -->
+        <div class="caretaker-box">
+            <div class="caretaker-details">
+
+                <h2>Shantanu Nichante</h2>
+                <p>Mobile Number: 98424897498</p>
+                <p>Address: lokmanaya nagar</p>
+                <p>Age: 30</p>
+                <p>Gender: male</p>
+                <p>Email: caretaker142@gmail.com</p>
+                <button onclick="sendEmail()">Select</button>
+            </div>
+        </div>
+
+        <!-- Repeat similar caretaker boxes for others -->
+        <!-- Caretaker Box 2 -->
+        <div class="caretaker-box">
+            <div class="caretaker-details">
+                <!-- Details for Caretaker 2 -->
+
+                <h2>Shakuntala Parate</h2>
+                <p>Mobile Number: 9824897498</p>
+                <p>Address: wanadongri</p>
+                <p>Age: 35</p>
+                <p>Gender: female</p>
+                <p>Email: caretaker6565@gmail.com</p>
+                <button onclick="sendEmail()">Select</button>
+            </div>
+        </div>
+
+        <!-- Caretaker Box 3 -->
+        <div class="caretaker-box">
+            <div class="caretaker-details">
+                <!-- Details for Caretaker 3 -->
+
+                <h2>Payal Shinde</h2>
+                <p>Mobile Number: 7589082190</p>
+                <p>Address: Itwari Nagpur</p>
+                <p>Age: 39</p>
+                <p>Gender: female</p>
+                <p>Email: caretaker6432@gmail.com</p>
+                <button onclick="sendEmail()">Select</button>
+            </div>
+        </div>
+
+        <!-- Repeat the above structure for the remaining 3 caretakers -->
+        <div class="caretaker-box">
+            <div class="caretaker-details">
+
+                <h2>Seema Agrawal</h2>
+                <p>Mobile Number: 9276548797</p>
+                <p>Address: lokmanaya nagar</p>
+                <p>Age: 32</p>
+                <p>Gender: female</p>
+                <p>Email: caretaker642@gmail.com</p>
+                <button onclick="sendEmail()">Select</button>
+            </div>
+        </div>
+
+        <!-- Repeat similar care taker boxes for others -->
+        <!-- Caretaker Box 2 -->
+        <div class="caretaker-box">
+            <div class="caretaker-details">
+                <!-- Details for Caretaker 5-->
+                <h2>Rajesh Thakur</h2>
+                <p>Mobile Number: 9277997457</p>
+                <p>Address: Pratap nagar</p>
+                <p>Age: 33</p>
+                <p>Gender: male</p>
+                <p>Email: caretaker342@gmail.com</p>
+                <button onclick="sendEmail()">Select</button>
+            </div>
+        </div>
+
+        <!-- Caretaker Box 3 -->
+        <div class="caretaker-box">
+            <div class="caretaker-details">
+                <!-- Details for Caretaker 6-->
+                <h2>Sahili Jain</h2>
+                <p>Mobile Number: 7598878687</p>
+                <p>Address: Itwari Nagpur</p>
+                <p>Age: 31</p>
+                <p>Gender: female</p>
+                <p>Email: caretaker522@gmail.com</p>
+                <button onclick="sendEmail()">Select</button>
+            </div>
+
+        </div>
+        <script src="caretaker.js"></script>
+
+
+</body>
+
+</html>

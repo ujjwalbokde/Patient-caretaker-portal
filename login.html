@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealingHandsCommunity.com</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+
+        }
+
+        header {
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+        }
+
+
+        main {
+            padding: 20px;
+        }
+
+
+        section {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        button {
+            margin: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .login-container {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 30px;
+            padding-right: 50px;
+            margin-bottom: 300px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        h1 {
+            margin: 0 0 20px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .option-buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 15px 0;
+        }
+
+        label {
+            margin: 0 5px;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        h2 {
+
+            font-size: 36px;
+            color: #3498db;
+            text-transform: uppercase;
+            transform: translateZ(25px);
+            transform-style: preserve-3d;
+            transition: transform 0.5s;
+        }
+
+        .logo {
+            width: 100px;
+            height: 100px;
+            background-color: aliceblue;
+            margin: 0%;
+            padding: 0%;
+            margin-left: 30px;
+        }
+
+        ul {
+            display: flex;
+        }
+
+        nav {
+            display: flex;
+            background-color: white;
+            font-size: 30px;
+            height: 150px;
+            color: #3498db;
+            text-transform: uppercase;
+            transform: translateZ(25px);
+            transform-style: preserve-3d;
+            transition: transform 0.5s;
+        }
+
+        li {
+            margin-right: 30px;
+        }
+
+        .middle {
+            margin-left: 0;
+            margin-right: 200px;
+            padding-left: 10px 10px;
+            padding-right: 10px 10px;
+            font-size: 150%;
+            margin-top: 20px;
+        }
+
+        .right {
+            display: flex;
+            margin-left: 150px;
+            margin-top: 20px;
+        }
+
+        .image2 {
+            width: 400px;
+            height: 250px;
+        }
+
+        #caretakerButton,
+        #patientButton {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        /* Styling for button hover state */
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        p {
+            border: 2px solid wheat;
+            margin-top: 100px;
+            margin-left: 250px;
+            margin-right: 250px;
+            padding: 20px;
+            border-radius: 20px;
+        }
+
+        main {
+            margin-left: 360px;
+        }
+
+        .patient_register {
+            margin-left: 100px;
+        }
+
+        .Rbutton {
+            margin-top: 0;
+
+        }
+        .img4{
+            margin-bottom: 300px;
+            margin-right: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation panal with headline and logo -->
+    <nav>
+        <ul>
+            <div>
+                <li>
+                    <img class="logo" src="heath_logo.jpg" alt="logo">
+                </li>
+            </div>
+            <div class="middle">
+                <li><b>Health Care Portal</b></li>
+            </div>
+            <div class="right">
+                <li> <a href="index.html" style="color: #3498db; text-decoration: none;">Home</a></li>
+                <li><a href="login.html" style="color: #3498db;text-decoration: none;">Login</a></li>
+                <li><a href="about.html " style="color: #3498db;text-decoration: none;">About</a></li>
+            </div>
+        </ul>
+
+    </nav>
+    <section>
+        <div>
+            <img class="img4" src="image4.png" alt="image4">
+        </div>
+        <div class="login-container">
+            <h1>Login</h1>
+            <form id="loginForm">
+                <input type="email" name="email" placeholder="Email" id="login_email" required>
+                <input type="password" name="password" placeholder="Password" id="login_password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+    </section>
+    <script type="module" src="login_patient.js"></script>
+</body>
+
+</html>

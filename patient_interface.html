@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Patient Interface</title>
+   
+    <style>
+        /* Styles for the patient interface */
+        body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+ 
+}
+/* styles.css */
+/* Style for the "Find a Caregiver" section */
+#findCaregiverButton {
+    display: block;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+/* Styling for the button hover state */
+#findCaregiverButton:hover {
+    background-color: #2980b9;
+}
+
+h2{
+    text-align: center;
+}
+  header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    margin-bottom: 20px;
+  }
+  
+  button {
+    margin: 10px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  h2{
+    
+        font-size: 36px;
+        color: #3498db;
+        text-transform: uppercase;
+        transform: translateZ(25px);
+        transform-style: preserve-3d;
+        transition: transform 0.5s;
+    }
+.logo{
+    width: 150px;
+    height: 150px;
+    background-color: aliceblue;
+    margin: 0%;
+    padding: 0%;
+    margin-left: 30px;
+}
+
+ul{
+  display: flex;
+}
+
+nav{
+  display: flex;
+  background-color:white ;
+  font-size: 36px;
+  color: #3498db;
+  text-transform: uppercase;
+  transform: translateZ(25px);
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+
+}
+li{
+  margin-right:15px ;
+}
+.middle{
+  margin-left: 0;
+  margin-right: 230px;
+  padding-left: 10px 10px;
+  padding-right: 10px 10px;
+  font-size: 150%;
+  margin-top: 35px;
+}
+.right{
+  display: flex;
+}
+.image2{
+  width: 400px;
+  height:250px;
+}
+#caretakerButton,#patientButton {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Styling for button hover state */
+button:hover {
+  background-color: #2980b9;
+}
+p{
+  border: 2px solid wheat;
+  margin-top: 100px;
+  margin-left: 250px;
+  margin-right: 250px;
+  padding: 20px;
+  border-radius: 20px;
+}
+main{
+  margin-left: 360px;
+ 
+}
+/* styles.css */
+/* Style for the "Book an Appointment" section */
+#appointmentForm {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+#date, #time {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Styling for the button hover state */
+button[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+          <div>
+            <li>
+              <img class="logo" src="heath_logo.jpg" alt="logo">
+            </li>
+          </div>
+          <div class="middle">
+            <li><b>Health Care Portal</b></li>
+          </div>
+          <div class="right">
+            <li> <a href="index.html" style="color: #3498db; text-decoration: none;">Home</a></li>
+            <li><a href="login.html" style="color: #3498db; text-decoration: none;">Login</a></li>
+            <li><a href="about.html " style="color: #3498db; text-decoration: none;">About</a></li>
+          </div>
+        </ul>
+        
+      </nav>
+
+    <section >
+        <h2>Book an Appointment</h2>
+        <form  action="appointment_detail.html" style="padding-right: 40px;" id="appointmentForm" onsubmit="bookAppointment(event)">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required><br>
+
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required><br>
+
+            <button type="submit">Find Caregiver</button>
+        </form>
+    </section>
+
+ 
+
+    <script>
+        function bookAppointment(event) {
+            event.preventDefault();
+            const date = document.getElementById('date').value;
+            const time = document.getElementById('time').value;
+            alert(`Fill complete details !`);
+            window.location.href = "appointment_detail.html"; // Redirect to demo2.html
+        }
+
+        function findCaregiver() {
+            alert('Finding a caregiver for you...');
+        }
+    </script>
+</body>
+</html>

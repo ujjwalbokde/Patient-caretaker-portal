@@ -1,0 +1,127 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Interface</title>
+    <style>
+        /* Styles for the patient interface */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+section {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    margin-top: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    height: 350px;
+    width: 700px;
+    margin-left: 350px;
+}
+
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Styles for the appointment form */
+form {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 60px;
+}
+
+button {
+    grid-column: span 2;
+    justify-self: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 40%;
+    margin-top: 30px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+button:focus {
+    outline: none;
+}
+h2{
+    font-size: 40px;
+}
+.date{
+    font-size: 30px;
+    margin-left: 20%;
+}
+.time{
+    font-size: 30px;
+    margin-left: 20%;
+}
+.idate{
+    font-size: 20px;
+    
+}
+.itime{
+    font-size: 20px;
+}
+label{
+    padding: 20px;
+}
+        /* Sample styles for the patient interface */
+        /* ... Your existing styles ... */
+</style>
+</head>
+<body>
+    <header>
+        <h1>Welcome, Patient!</h1>
+    </header>
+
+    <section>
+        <h2>Book an Appointment :</h2>
+        <form id="appointmentForm" onsubmit="bookAppointment(event)">
+            <label class="date" for="date">Date:</label>
+            <input class="idate" type="date" id="date" name="date" required ><br>
+            <br>
+            <label class="time" for="time">Time:</label>
+            <input class="itime" type="time" id="time" name="time" required><br>
+            <br>
+            <button type="submit">Book Appointment</button>
+        </form>
+    </section>
+
+
+    <footer>
+        <p>Contact us at patientcare@gmail.com</p>
+    </footer>
+
+    <script>
+        function bookAppointment(event) {
+            event.preventDefault();
+            const date = document.getElementById('date').value;
+            const time = document.getElementById('time').value;
+            alert(`Appointment booked for ${date} at ${time}`);
+            window.location.href="appointment_detail.html"; // Redirect to demo2.html
+            
+        }
+    </script>
+</body>
+</html>

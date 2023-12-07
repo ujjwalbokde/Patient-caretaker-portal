@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HealingHandsCommunity.com</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: black;
+
+    }
+
+    header {
+      background-color: #f0f0f0;
+      padding: 20px;
+      text-align: center;
+    }
+
+
+    main {
+      padding: 20px;
+    }
+
+    section {
+      margin-bottom: 20px;
+    }
+
+    button {
+      margin: 10px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    h2 {
+
+      font-size: 36px;
+      color: #3498db;
+      text-transform: uppercase;
+      transform: translateZ(25px);
+      transform-style: preserve-3d;
+      transition: transform 0.5s;
+    }
+
+    .logo {
+      width: 100px;
+      height: 100px;
+      background-color: aliceblue;
+      margin: 0%;
+      padding: 0%;
+      margin-left: 30px;
+    }
+
+    ul {
+      display: flex;
+    }
+
+    nav {
+      display: flex;
+      background-color: white;
+      font-size: 30px;
+      height: 150px;
+      color: #3498db;
+      text-transform: uppercase;
+      transform: translateZ(25px);
+      transform-style: preserve-3d;
+      transition: transform 0.5s;
+    }
+
+    li {
+      margin-right: 30px;
+    }
+
+    .middle {
+      margin-left: 0;
+      margin-right: 230px;
+      padding-left: 10px 10px;
+      padding-right: 10px 10px;
+      font-size: 150%;
+      margin-top: 20px;
+    }
+
+    .right {
+      display: flex;
+      margin-left: 150px;
+      margin-top: 20px;
+    }
+
+    .image2 {
+      width: 400px;
+      height: 250px;
+    }
+
+    #caretakerButton,
+    #patientButton {
+      background-color: #3498db;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    /* Styling for button hover state */
+    button:hover {
+      background-color: #2980b9;
+    }
+
+    p {
+      border: 2px solid wheat;
+      margin-top: 100px;
+      margin-left: 250px;
+      margin-right: 250px;
+      padding: 20px;
+      border-radius: 20px;
+    }
+
+    main {
+      margin-left: 360px;
+    }
+    .patient_register{
+        margin-left: 100px;
+    }
+    .Rbutton{
+      margin-top: 0;
+      
+    }
+    .image1,
+  .image2 {
+    transition: transform 0.5s;
+  }
+
+  .image1:hover,
+  .image2:hover {
+    transform: scale(1.1);
+  }
+  h2.headline {
+    font-size: 36px;
+    color: #3498db;
+    text-transform: uppercase;
+    transform: translateZ(25px);
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+  }
+
+  h2.headline:hover {
+    transform: scale(1.1);
+  }
+  .navlink:hover{
+  color: white;
+  padding: 10px;
+  border: 1px solid #3498db;
+  border-radius: 7px;
+
+}
+
+  
+  </style>
+</head>
+
+<body>
+  <!-- Navigation panal with headline and logo -->
+  <nav>
+    <ul>
+      <div>
+        <li>
+          <img class="logo" src="heath_logo.jpg" alt="logo">
+        </li>
+      </div>
+      <div class="middle">
+        <li><b>Health Care Portal</b></li>
+      </div>
+      <div class="right">
+        <li> <a href="index.html" style="color: #3498db; text-decoration: none;" class="navlink">Home</a></li>
+        <li><a href="login.html" style="color: #3498db;text-decoration: none;" class="navlink">Login</a></li>
+        <li><a href="about.html " style="color: #3498db;text-decoration: none;" class="navlink">About</a></li>
+      </div>
+    </ul>
+
+  </nav>
+  <!-- Informative images -->
+  <main>
+    <section id="registration">
+      <img class="image1" src="logo.png.png" alt="images">
+      <img class="image2" src="image2.png" alt="image2">
+      <!--Registration options  -->
+      <div class="patient_register">
+      <h2 class="headline">Patient Registration</h2>
+      <button class="Rbutton" style="margin-left: 120px;" onclick="window.location.href='register.html'" id="patientButton">Register as
+        Patient</button>
+      </div>
+    </section>
+  </main>
+
+</body>
+
+</html>
